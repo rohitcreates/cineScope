@@ -37,7 +37,7 @@ if (!trailer) {
     return (
       <section>
         <h2 className="text-3xl font-bold mb-6">🎬 Official Trailer</h2>
-        <p className="text-gray-400">No trailer available.</p>
+        <p className="text-gray-400 p-4">No trailer available.</p>
       </section>
     );
   }

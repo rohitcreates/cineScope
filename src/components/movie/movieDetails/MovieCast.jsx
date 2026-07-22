@@ -1,6 +1,7 @@
 import {getMovieCast} from "../../../services/api";
 import { useState, useEffect } from "react";
 import ActorCard from "./ActorCard";
+import Loading from "../../common/Loading";
 
 
 function MovieCast({ movieId }) {
@@ -26,7 +27,7 @@ function MovieCast({ movieId }) {
     }, [movieId]);
 
   if (loading) {
-    return <div>Loading cast...</div>;
+    return <Loading />;
   }
 
   return (

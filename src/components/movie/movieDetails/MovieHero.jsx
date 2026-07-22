@@ -84,15 +84,19 @@ function MovieHero({ movie }) {
             {isExpanded ? "Show Less" : "Show More"}
           </button>
 
-         <button
+        <button
             onClick={() =>
               isFavorite
                 ? removeFavorite(movie.id)
                 : addFavorite(movie)
             }
-            className="mt-4 ml-4 px-6 py-2 bg-red-500 hover:bg-red-600 text-black font-semibold rounded-full transition-colors duration-300"
+            className={`mt-4 ml-4 px-6 py-2 text-black font-semibold rounded-full transition-colors duration-300 ${
+              isFavorite
+                ? "bg-purple-500 hover:bg-purple-600"
+                : "bg-red-500 hover:bg-red-600"
+            }`}
           >
-            {isFavorite ? "💔 Remove Favorite" : "❤️ Add Favorite"}
+            {isFavorite ? "💜 Saved" : "❤️ Add Favorite"}
           </button>
         </div>
 
