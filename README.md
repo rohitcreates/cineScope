@@ -1,16 +1,95 @@
-# React + Vite
+# 🎬 CineScope
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern movie discovery application built with React and TMDB API.
 
-Currently, two official plugins are available:
+CineScope allows users to explore trending movies, search for movies, view detailed information, watch trailers, explore cast members, and save favorite movies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🔍 Search movies
+- 🔥 View trending movies
+- 🎬 Movie details page
+- ⭐ Movie ratings and information
+- 🎞️ Watch official trailers
+- 👥 View movie cast
+- 🎥 Explore similar movies
+- ❤️ Add/remove favorite movies
+- 💾 Favorites saved using localStorage
+- 📱 Responsive design
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- TMDB API
+- JavaScript
+- Git & GitHub
+
+## 📂 Project Structure
+
+src
+├── components
+│ ├── common
+│ ├── hero
+│ ├── layout
+│ └── movie
+│
+├── context
+├── pages
+├── services
+└── App.jsx
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/rohitcreates/cineScope.git
+
+Go into the project:
+
+cd movie-discovery
+
+Install dependencies:
+
+npm install
+
+Create a .env file:
+
+VITE_TMDB_ACCESS_TOKEN=your_token_here
+
+Start development server:
+
+npm run dev
+🔑 API
+
+This project uses:
+
+TMDB API
+
+https://www.themoviedb.org/
+
+📚 What I Learned
+Building reusable React components
+Managing state with hooks
+Fetching data from APIs
+React Router navigation
+Context API for global state
+Handling loading and errors
+Creating responsive layouts with Tailwind CSS
+
+
+
+👨‍💻 Author
+
+Rohit Singh
+
+GitHub:
+https://github.com/rohitcreates
