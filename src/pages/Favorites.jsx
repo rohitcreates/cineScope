@@ -13,12 +13,26 @@ function Favorites() {
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {favorites.map((movie) => (
-          <MovieCard 
-            key={movie.id}
-            movie={movie}
-          />
-        ))}
+        {favorites.length === 0 ? (
+  <div className="min-h-[70vh] w-full flex flex-col items-center justify-center text-center text-gray-400">
+    <h2 className="text-2xl font-bold text-white">
+      No favorite movies yet ❤️
+    </h2>
+
+    <p className="text-gray-400 mt-3">
+      Start adding movies you love!
+    </p>  
+  </div>
+) : (
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+    {favorites.map((movie) => (
+      <MovieCard 
+        key={movie.id}
+        movie={movie}
+      />
+    ))}
+  </div>
+)}
       </div>
     </section>
   );
