@@ -6,7 +6,7 @@ CineScope allows users to explore trending movies, search for movies, view detai
 
 ## 🚀 Live Demo
 
-
+https://cine-scope-pi-lac.vercel.app/
 
 
 ## ✨ Features
