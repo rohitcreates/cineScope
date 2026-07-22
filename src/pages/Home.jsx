@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/hero/Hero";
-import SearchBar from "../components/hero/SearchBar";
+
 import MovieCard from "../components/movie/movieDetails/MovieCard";
 import { searchMovies,getTrendingMovies } from "../services/api";
 import Loading from "../components/common/Loading";
