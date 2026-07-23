@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import NavbarSearch from "./NavbarSearch";
 
 const Navbar = () => {
   return (
@@ -13,12 +14,12 @@ const Navbar = () => {
           <h1 className="text-white text-2xl font-bold">CineScope</h1>
         </div>
 
-      
+      <NavbarSearch />
         <div className="flex items-center gap-2 bg-gray-900 px-5 py-2 rounded-xl border border-gray-700 hover:border-red-500 transition-colors cursor-pointer">
           <Link to="/favorites">
-            <button>
+           
               ❤️ Favorites
-            </button>
+           
           </Link>
         </div>
 
