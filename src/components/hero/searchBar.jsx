@@ -24,7 +24,7 @@ import react from 'react';
         />
 
         <button 
-          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-medium transition-colors hover:bg-green-500"
+          className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-medium transition-colors hover:-shadow-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
           onClick={handleSearch}
         >
           Search
@@ -33,11 +33,7 @@ import react from 'react';
       </div>
 
      
-      {searchText && (
-        <p className="mt-6 text-gray-400 text-sm text-center">
-          You typed: <span className="text-white font-medium">{searchText}</span>
-        </p>
-      )}
+      
     </div>
   );
 }
