@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useContext } from "react";
 import { FavoritesContext } from "../../../context/FavoritesContext";
+import { Link } from "react-router-dom";
 
 function MovieHero({ movie }) {
   const BACKDROP_URL = "https://image.tmdb.org/t/p/original";
@@ -61,15 +62,26 @@ function MovieHero({ movie }) {
             <span>{movie.original_language.toUpperCase()}</span>
           </div>
 
-          {/* Genres */}
           <div className="flex flex-wrap gap-3 mt-6">
             {movie.genres.map((genre) => (
-              <span
+              <Link
                 key={genre.id}
-                className="px-4 py-1 rounded-full bg-white/10 border border-white/20 text-white text-sm"
+                to={`/genre/${genre.id}/${genre.name}`}
+                className="
+                  px-4 py-1 
+                  rounded-full 
+                  bg-white/10 
+                  border 
+                  border-white/20 
+                  text-white 
+                  text-sm
+                  hover:bg-yellow-500
+                  hover:text-black
+                  transition
+                "
               >
                 {genre.name}
-              </span>
+              </Link>
             ))}
           </div>
 

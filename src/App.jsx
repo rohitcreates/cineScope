@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./pages/MovieDetails";
 import Favorites from "./pages/Favorites";
-
+import GenreMovies from "./pages/GenreMovies";
 
 function App() {
   return (
@@ -12,6 +12,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movie/:id" element={<MovieDetails />} />
           <Route path="/favorites" element={<Favorites />} />
+          <Route 
+            path="/genre/:id/:name" 
+            element={<GenreMovies />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

@@ -85,3 +85,22 @@ export async function getSimilarMovies(id) {
   const data = await response.json();
   return data.results;
 }
+
+export async function getMoviesByGenre(genreId) {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/discover/movie?with_genres=${genreId}`,
+    {
+      headers: {
+        Authorization: `Bearer ${ACCESS_TOKEN}`,
+      },
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch genre movies");
+  }
+
+  const data = await response.json();
+
+  return data.results;
+}
