@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./pages/MovieDetails";
 import Favorites from "./pages/Favorites";
 import GenreMovies from "./pages/GenreMovies";
-import Layout from "./components/layout/Layout";
+import Layout from "./components/layout/layout";
 import Search from "./pages/Search";
 
 
